@@ -1,0 +1,1024 @@
+manage.py: 2: manage.py: import: not found
+manage.py: 3: manage.py: import: not found
+manage.py: 6: manage.py: Syntax error: word unexpected (expecting ")")
+manage.py: line 2: import: command not found
+manage.py: line 3: import: command not found
+manage.py: line 6: syntax error near unexpected token `"DJANGO_SETTINGS_MODULE",'
+manage.py: line 6: `    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "conf.settings")'
+[02/Sep/2017 12:25:00] "GET / HTTP/1.1" 200 1716
+[02/Sep/2017 12:29:36] "GET /admin HTTP/1.1" 301 0
+[02/Sep/2017 12:29:36] "GET /admin/ HTTP/1.1" 302 0
+[02/Sep/2017 12:29:36] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1650
+[02/Sep/2017 12:29:36] "GET /static/admin/css/base.css HTTP/1.1" 200 16066
+[02/Sep/2017 12:29:36] "GET /static/admin/css/login.css HTTP/1.1" 200 1203
+[02/Sep/2017 12:29:36] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[02/Sep/2017 12:29:37] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 80304
+[02/Sep/2017 12:29:37] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 81348
+[02/Sep/2017 12:29:44] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[02/Sep/2017 12:29:44] "GET /admin/ HTTP/1.1" 200 2779
+[02/Sep/2017 12:29:44] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 412
+[02/Sep/2017 12:29:45] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 82564
+[02/Sep/2017 12:29:45] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[02/Sep/2017 12:29:45] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[02/Sep/2017 12:30:02] "GET / HTTP/1.1" 200 1716
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 13 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+September 02, 2017 - 12:24:44
+Django version 1.11.4, using settings 'conf.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[02/Sep/2017 12:32:01] "GET /admin/ HTTP/1.1" 200 2779
+[02/Sep/2017 12:32:07] "GET / HTTP/1.1" 200 1716
+Not Found: /home
+[02/Sep/2017 12:32:10] "GET /home HTTP/1.1" 404 1939
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 02, 2017 - 12:31:38
+Django version 1.11.4, using settings 'conf.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Traceback (most recent call last):
+  File "./manage.py", line 22, in <module>
+    execute_from_command_line(sys.argv)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/core/management/__init__.py", line 363, in execute_from_command_line
+    utility.execute()
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/core/management/__init__.py", line 307, in execute
+    settings.INSTALLED_APPS
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/conf/__init__.py", line 56, in __getattr__
+    self._setup(name)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/conf/__init__.py", line 41, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/conf/__init__.py", line 110, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/home/shawn/.pyenv/versions/3.6.2/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/mnt/c/Users/shawn/Projects/comp/restsv/conf/settings.py", line 27, in <module>
+    DEBUG = false
+NameError: name 'false' is not defined
+CommandError: You must set settings.ALLOWED_HOSTS if DEBUG is False.
+Traceback (most recent call last):
+  File "./manage.py", line 22, in <module>
+    execute_from_command_line(sys.argv)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/core/management/__init__.py", line 363, in execute_from_command_line
+    utility.execute()
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/core/management/__init__.py", line 307, in execute
+    settings.INSTALLED_APPS
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/conf/__init__.py", line 56, in __getattr__
+    self._setup(name)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/conf/__init__.py", line 41, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/conf/__init__.py", line 110, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/home/shawn/.pyenv/versions/3.6.2/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 781, in get_code
+  File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/mnt/c/Users/shawn/Projects/comp/restsv/conf/settings.py", line 29
+    ALLOWED_HOSTS = [*]
+                      ^
+SyntaxError: invalid syntax
+[02/Sep/2017 12:37:34] "GET / HTTP/1.1" 404 74
+[02/Sep/2017 12:37:39] "GET / HTTP/1.1" 404 74
+[02/Sep/2017 12:37:48] "GET / HTTP/1.1" 404 74
+[02/Sep/2017 12:37:56] "GET /admin/ HTTP/1.1" 200 2779
+[02/Sep/2017 12:38:03] "GET / HTTP/1.1" 404 74
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 02, 2017 - 12:37:34
+Django version 1.11.4, using settings 'conf.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[02/Sep/2017 12:38:26] "GET / HTTP/1.1" 200 1716
+[02/Sep/2017 12:38:27] "GET / HTTP/1.1" 200 1716
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 02, 2017 - 12:38:23
+Django version 1.11.4, using settings 'conf.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[02/Sep/2017 12:40:56] "GET / HTTP/1.1" 200 1716
+[02/Sep/2017 12:40:57] "GET / HTTP/1.1" 200 1716
+[02/Sep/2017 12:40:58] "GET / HTTP/1.1" 200 1716
+[02/Sep/2017 12:41:02] "GET /admin/ HTTP/1.1" 200 2779
+[02/Sep/2017 12:41:07] "GET / HTTP/1.1" 200 1716
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 02, 2017 - 12:40:52
+Django version 1.11.4, using settings 'conf.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x7fe2093ec510>
+Traceback (most recent call last):
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    autoreload.raise_last_exception()
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/utils/autoreload.py", line 251, in raise_last_exception
+    six.reraise(*_exception)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/__init__.py", line 27, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/apps/registry.py", line 85, in populate
+    app_config = AppConfig.create(entry)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/apps/config.py", line 94, in create
+    module = import_module(entry)
+  File "/home/shawn/.pyenv/versions/3.6.2/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 948, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'main'
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 02, 2017 - 12:51:34
+Django version 1.11.4, using settings 'conf.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 02, 2017 - 12:51:53
+Django version 1.11.4, using settings 'conf.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x7fc1c25459d8>
+Traceback (most recent call last):
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    autoreload.raise_last_exception()
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/utils/autoreload.py", line 251, in raise_last_exception
+    six.reraise(*_exception)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/__init__.py", line 27, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models()
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/apps/config.py", line 202, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/home/shawn/.pyenv/versions/3.6.2/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/mnt/c/Users/shawn/Projects/comp/restsv/main/models.py", line 3, in <module>
+    class parts(models.Model):
+  File "/mnt/c/Users/shawn/Projects/comp/restsv/main/models.py", line 4, in parts
+    name = models.charfield(max_length=50)
+AttributeError: module 'django.db.models' has no attribute 'charfield'
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x7fd2049759d8>
+Traceback (most recent call last):
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    autoreload.raise_last_exception()
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/utils/autoreload.py", line 251, in raise_last_exception
+    six.reraise(*_exception)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/__init__.py", line 27, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models()
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/apps/config.py", line 202, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/home/shawn/.pyenv/versions/3.6.2/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/mnt/c/Users/shawn/Projects/comp/restsv/main/models.py", line 3, in <module>
+    class parts(models.Model):
+  File "/mnt/c/Users/shawn/Projects/comp/restsv/main/models.py", line 4, in parts
+    name = models.charfield(max_length=50)
+AttributeError: module 'django.db.models' has no attribute 'charfield'
+[02/Sep/2017 13:40:37] "GET / HTTP/1.1" 200 1716
+[02/Sep/2017 13:40:41] "GET /admin/ HTTP/1.1" 200 2779
+[02/Sep/2017 13:40:41] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[02/Sep/2017 13:40:41] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[02/Sep/2017 13:40:41] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[02/Sep/2017 13:40:41] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[02/Sep/2017 13:40:42] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[02/Sep/2017 13:40:42] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[02/Sep/2017 13:40:42] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[02/Sep/2017 13:40:42] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 02, 2017 - 13:40:17
+Django version 1.11.4, using settings 'conf.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 02, 2017 - 13:44:02
+Django version 1.11.4, using settings 'conf.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x7ff29e049bf8>
+Traceback (most recent call last):
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    autoreload.raise_last_exception()
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/utils/autoreload.py", line 251, in raise_last_exception
+    six.reraise(*_exception)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/__init__.py", line 27, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/apps/registry.py", line 116, in populate
+    app_config.ready()
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/contrib/admin/apps.py", line 23, in ready
+    self.module.autodiscover()
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/contrib/admin/__init__.py", line 26, in autodiscover
+    autodiscover_modules('admin', register_to=site)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/utils/module_loading.py", line 50, in autodiscover_modules
+    import_module('%s.%s' % (app_config.name, module_to_search))
+  File "/home/shawn/.pyenv/versions/3.6.2/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/mnt/c/Users/shawn/Projects/comp/restsv/main/admin.py", line 3, in <module>
+    admin.site.register(models.Parts)
+AttributeError: module 'main.models' has no attribute 'Parts'
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x7f32111f9bf8>
+Traceback (most recent call last):
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    autoreload.raise_last_exception()
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/utils/autoreload.py", line 251, in raise_last_exception
+    six.reraise(*_exception)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/__init__.py", line 27, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/apps/registry.py", line 116, in populate
+    app_config.ready()
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/contrib/admin/apps.py", line 23, in ready
+    self.module.autodiscover()
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/contrib/admin/__init__.py", line 26, in autodiscover
+    autodiscover_modules('admin', register_to=site)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/utils/module_loading.py", line 50, in autodiscover_modules
+    import_module('%s.%s' % (app_config.name, module_to_search))
+  File "/home/shawn/.pyenv/versions/3.6.2/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/mnt/c/Users/shawn/Projects/comp/restsv/main/admin.py", line 4, in <module>
+    admin.site.register(models.Parts)
+AttributeError: module 'main.models' has no attribute 'Parts'
+[02/Sep/2017 14:09:47] "GET / HTTP/1.1" 200 1716
+[02/Sep/2017 14:09:53] "GET /admin/ HTTP/1.1" 200 3402
+[02/Sep/2017 14:09:53] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[02/Sep/2017 14:09:53] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[02/Sep/2017 14:09:53] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[02/Sep/2017 14:09:53] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[02/Sep/2017 14:09:53] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[02/Sep/2017 14:09:53] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[02/Sep/2017 14:09:53] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[02/Sep/2017 14:09:53] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 02, 2017 - 14:09:12
+Django version 1.11.4, using settings 'conf.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Unhandled exception in thread started by <function check_errors.<locals>.wrapper at 0x7f184597abf8>
+Traceback (most recent call last):
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/core/management/commands/runserver.py", line 117, in inner_run
+    autoreload.raise_last_exception()
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/utils/autoreload.py", line 251, in raise_last_exception
+    six.reraise(*_exception)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/utils/autoreload.py", line 228, in wrapper
+    fn(*args, **kwargs)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/__init__.py", line 27, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/apps/registry.py", line 116, in populate
+    app_config.ready()
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/contrib/admin/apps.py", line 23, in ready
+    self.module.autodiscover()
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/contrib/admin/__init__.py", line 26, in autodiscover
+    autodiscover_modules('admin', register_to=site)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/utils/module_loading.py", line 50, in autodiscover_modules
+    import_module('%s.%s' % (app_config.name, module_to_search))
+  File "/home/shawn/.pyenv/versions/3.6.2/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/mnt/c/Users/shawn/Projects/comp/restsv/main/admin.py", line 4, in <module>
+    admin.site.register(models.Parts)
+AttributeError: module 'main.models' has no attribute 'Parts'
+[02/Sep/2017 14:10:33] "GET /admin/ HTTP/1.1" 200 3397
+Internal Server Error: /admin/main/part/
+Traceback (most recent call last):
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: main_part
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1542, in changelist_view
+    self.list_max_show_all, self.list_editable, self,
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/contrib/admin/views/main.py", line 79, in __init__
+    self.get_results(request)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/contrib/admin/views/main.py", line 177, in get_results
+    result_count = paginator.count
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/core/paginator.py", line 79, in count
+    return self.object_list.count()
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/db/models/query.py", line 364, in count
+    return self.query.get_count(using=self.db)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/db/models/sql/query.py", line 499, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/db/models/sql/query.py", line 480, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 894, in execute_sql
+    raise original_exception
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 884, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/db/backends/utils.py", line 80, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: main_part
+[02/Sep/2017 14:10:35] "GET /admin/main/part/ HTTP/1.1" 500 176109
+[02/Sep/2017 14:10:52] "GET /admin/ HTTP/1.1" 200 3397
+[02/Sep/2017 14:10:55] "GET /admin/ HTTP/1.1" 200 3397
+[02/Sep/2017 14:26:07] "GET /admin/ HTTP/1.1" 200 3397
+[02/Sep/2017 14:26:08] "GET /admin/ HTTP/1.1" 200 3397
+[02/Sep/2017 14:28:23] "GET /admin/ HTTP/1.1" 200 3397
+[02/Sep/2017 14:28:24] "GET /admin/main/part/ HTTP/1.1" 200 3018
+[02/Sep/2017 14:28:24] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[02/Sep/2017 14:28:24] "GET /static/admin/js/core.js HTTP/1.1" 200 7976
+[02/Sep/2017 14:28:24] "GET /static/admin/css/changelists.css HTTP/1.1" 200 6170
+[02/Sep/2017 14:28:24] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 363
+[02/Sep/2017 14:28:24] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6591
+[02/Sep/2017 14:28:24] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 258648
+[02/Sep/2017 14:28:24] "GET /static/admin/js/actions.js HTTP/1.1" 200 6501
+[02/Sep/2017 14:28:24] "GET /static/admin/js/urlify.js HTTP/1.1" 200 8186
+[02/Sep/2017 14:28:24] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1538
+[02/Sep/2017 14:28:24] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 128820
+[02/Sep/2017 14:28:25] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[02/Sep/2017 14:28:26] "GET /admin/main/part/add/ HTTP/1.1" 200 3789
+[02/Sep/2017 14:28:27] "GET /static/admin/css/forms.css HTTP/1.1" 200 8173
+[02/Sep/2017 14:28:27] "GET /static/admin/js/change_form.js HTTP/1.1" 200 712
+[02/Sep/2017 14:28:27] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 495
+[02/Sep/2017 14:28:27] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[02/Sep/2017 14:28:27] "GET /static/admin/css/widgets.css HTTP/1.1" 200 10340
+[02/Sep/2017 14:28:30] "GET /admin/main/part/ HTTP/1.1" 200 3018
+[02/Sep/2017 14:28:30] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[02/Sep/2017 14:28:31] "GET /admin/main/ HTTP/1.1" 200 2178
+[02/Sep/2017 14:28:33] "GET /admin/ HTTP/1.1" 200 3397
+[02/Sep/2017 14:31:44] "GET /admin/ HTTP/1.1" 200 3397
+[02/Sep/2017 14:31:46] "GET /admin/ HTTP/1.1" 200 3397
+[02/Sep/2017 14:31:47] "GET /admin/ HTTP/1.1" 200 3397
+[02/Sep/2017 14:31:48] "GET /admin/ HTTP/1.1" 200 3397
+[02/Sep/2017 14:31:49] "GET /admin/ HTTP/1.1" 200 3397
+[02/Sep/2017 14:31:49] "GET /admin/ HTTP/1.1" 200 3397
+[02/Sep/2017 14:31:50] "GET /admin/ HTTP/1.1" 200 3397
+[02/Sep/2017 14:31:51] "GET /admin/ HTTP/1.1" 200 3397
+[02/Sep/2017 14:31:52] "GET /admin/ HTTP/1.1" 200 3397
+[02/Sep/2017 14:31:53] "GET /admin/ HTTP/1.1" 200 3397
+[02/Sep/2017 14:31:56] "GET /admin/main/part/ HTTP/1.1" 200 3018
+[02/Sep/2017 14:31:56] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[02/Sep/2017 14:31:57] "GET /admin/ HTTP/1.1" 200 3397
+[02/Sep/2017 14:31:58] "GET /admin/auth/group/ HTTP/1.1" 200 3379
+[02/Sep/2017 14:31:58] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[02/Sep/2017 14:31:58] "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+[02/Sep/2017 14:31:59] "GET /admin/ HTTP/1.1" 200 3397
+[02/Sep/2017 14:33:38] "GET /admin/ HTTP/1.1" 200 3397
+[02/Sep/2017 14:33:38] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[02/Sep/2017 14:33:38] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[02/Sep/2017 14:33:38] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[02/Sep/2017 14:33:38] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[02/Sep/2017 14:33:39] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[02/Sep/2017 14:33:39] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[02/Sep/2017 14:33:39] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[02/Sep/2017 14:33:39] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[02/Sep/2017 14:33:40] "GET /admin/ HTTP/1.1" 200 3397
+[02/Sep/2017 14:33:42] "GET /admin/ HTTP/1.1" 200 3397
+[02/Sep/2017 14:37:19] "GET / HTTP/1.1" 200 1716
+[02/Sep/2017 14:37:21] "GET /admin/ HTTP/1.1" 200 3397
+[02/Sep/2017 14:59:51] "GET / HTTP/1.1" 200 1716
+[02/Sep/2017 14:59:52] "GET / HTTP/1.1" 200 1716
+[02/Sep/2017 15:02:15] "GET /admin/ HTTP/1.1" 200 3397
+[02/Sep/2017 15:02:15] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[02/Sep/2017 15:02:15] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[02/Sep/2017 15:02:15] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[02/Sep/2017 15:02:15] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[02/Sep/2017 15:02:15] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[02/Sep/2017 15:02:15] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[02/Sep/2017 15:02:15] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[02/Sep/2017 15:02:15] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[02/Sep/2017 15:02:16] "GET / HTTP/1.1" 200 1716
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 02, 2017 - 15:02:14
+Django version 1.11.4, using settings 'conf.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[02/Sep/2017 15:09:20] "GET /admin/ HTTP/1.1" 200 3401
+[02/Sep/2017 15:09:22] "GET /admin/ HTTP/1.1" 200 3401
+Internal Server Error: /admin/main/part/
+Traceback (most recent call last):
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: restsv_parts
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1542, in changelist_view
+    self.list_max_show_all, self.list_editable, self,
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/contrib/admin/views/main.py", line 79, in __init__
+    self.get_results(request)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/contrib/admin/views/main.py", line 177, in get_results
+    result_count = paginator.count
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/core/paginator.py", line 79, in count
+    return self.object_list.count()
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/db/models/query.py", line 364, in count
+    return self.query.get_count(using=self.db)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/db/models/sql/query.py", line 499, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/db/models/sql/query.py", line 480, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 894, in execute_sql
+    raise original_exception
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 884, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/db/backends/utils.py", line 80, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: restsv_parts
+[02/Sep/2017 15:09:24] "GET /admin/main/part/ HTTP/1.1" 500 176163
+[02/Sep/2017 15:09:26] "GET /admin/ HTTP/1.1" 200 3401
+[02/Sep/2017 15:09:55] "GET /admin/ HTTP/1.1" 200 3401
+[02/Sep/2017 15:09:56] "GET /admin/main/part/ HTTP/1.1" 200 3041
+[02/Sep/2017 15:09:56] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[02/Sep/2017 15:09:56] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[02/Sep/2017 15:09:56] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[02/Sep/2017 15:09:56] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[02/Sep/2017 15:09:56] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[02/Sep/2017 15:09:56] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[02/Sep/2017 15:09:56] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[02/Sep/2017 15:09:56] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[02/Sep/2017 15:09:56] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[02/Sep/2017 15:09:56] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[02/Sep/2017 15:09:57] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[02/Sep/2017 15:09:58] "GET /admin/main/part/add/ HTTP/1.1" 200 3808
+[02/Sep/2017 15:09:58] "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+[02/Sep/2017 15:09:58] "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+[02/Sep/2017 15:09:58] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[02/Sep/2017 15:09:58] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[02/Sep/2017 15:09:58] "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+[02/Sep/2017 15:10:02] "GET /admin/main/part/ HTTP/1.1" 200 3041
+[02/Sep/2017 15:10:02] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[02/Sep/2017 15:10:16] "GET /admin/main/ HTTP/1.1" 200 2182
+[02/Sep/2017 15:10:18] "GET /admin/main/part/ HTTP/1.1" 200 3041
+[02/Sep/2017 15:10:18] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 02, 2017 - 15:09:08
+Django version 1.11.4, using settings 'conf.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[02/Sep/2017 15:10:35] "GET /admin/main/ HTTP/1.1" 200 2179
+[02/Sep/2017 15:10:37] "GET /admin/main/part/ HTTP/1.1" 200 3035
+[02/Sep/2017 15:10:37] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[02/Sep/2017 15:10:39] "GET /admin/main/ HTTP/1.1" 200 2179
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 02, 2017 - 15:10:32
+Django version 1.11.4, using settings 'conf.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[02/Sep/2017 15:10:52] "GET /admin/main/ HTTP/1.1" 200 2182
+[02/Sep/2017 15:10:53] "GET /admin/ HTTP/1.1" 200 3401
+[02/Sep/2017 15:10:54] "GET /admin/main/part/ HTTP/1.1" 200 3032
+[02/Sep/2017 15:10:54] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[02/Sep/2017 15:10:57] "GET /admin/main/part/add/ HTTP/1.1" 200 3799
+[02/Sep/2017 15:10:57] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[02/Sep/2017 15:11:00] "GET /admin/main/part/ HTTP/1.1" 200 3032
+[02/Sep/2017 15:11:00] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[02/Sep/2017 15:11:27] "GET /admin/main/part/add/ HTTP/1.1" 200 3799
+[02/Sep/2017 15:11:27] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[02/Sep/2017 15:11:33] "POST /admin/main/part/add/ HTTP/1.1" 302 0
+[02/Sep/2017 15:11:34] "GET /admin/main/part/ HTTP/1.1" 200 4345
+[02/Sep/2017 15:11:34] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[02/Sep/2017 15:11:34] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[02/Sep/2017 15:11:38] "GET /admin/main/ HTTP/1.1" 200 2182
+[02/Sep/2017 15:11:40] "GET /admin/main/part/ HTTP/1.1" 200 4164
+[02/Sep/2017 15:11:40] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[02/Sep/2017 15:11:41] "GET /admin/main/part/1/change/ HTTP/1.1" 200 4033
+[02/Sep/2017 15:11:41] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[02/Sep/2017 15:11:44] "GET /admin/main/part/ HTTP/1.1" 200 4164
+[02/Sep/2017 15:11:44] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[02/Sep/2017 15:11:47] "GET /admin/main/part/1/change/ HTTP/1.1" 200 4033
+[02/Sep/2017 15:11:47] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[02/Sep/2017 15:11:48] "GET /admin/ HTTP/1.1" 200 3720
+[02/Sep/2017 15:11:50] "GET /admin/main/part/ HTTP/1.1" 200 4164
+[02/Sep/2017 15:11:50] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[02/Sep/2017 15:11:51] "GET /admin/ HTTP/1.1" 200 3720
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 02, 2017 - 15:10:48
+Django version 1.11.4, using settings 'conf.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[03/Sep/2017 12:18:48] "GET /admin/ HTTP/1.1" 200 3720
+[03/Sep/2017 12:18:48] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[03/Sep/2017 12:18:48] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[03/Sep/2017 12:18:49] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[03/Sep/2017 12:18:49] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[03/Sep/2017 12:18:49] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[03/Sep/2017 12:18:49] "GET / HTTP/1.1" 200 1716
+[03/Sep/2017 12:18:49] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[03/Sep/2017 12:18:49] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[03/Sep/2017 12:18:49] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[03/Sep/2017 12:18:52] "GET /admin/main/part/ HTTP/1.1" 200 4164
+[03/Sep/2017 12:18:52] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[03/Sep/2017 12:18:52] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[03/Sep/2017 12:18:52] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[03/Sep/2017 12:18:52] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[03/Sep/2017 12:18:52] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[03/Sep/2017 12:18:52] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[03/Sep/2017 12:18:52] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[03/Sep/2017 12:18:53] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[03/Sep/2017 12:18:53] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[03/Sep/2017 12:18:53] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[03/Sep/2017 12:18:53] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[03/Sep/2017 12:18:55] "GET /admin/main/part/1/change/ HTTP/1.1" 200 4033
+[03/Sep/2017 12:18:55] "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+[03/Sep/2017 12:18:55] "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+[03/Sep/2017 12:18:55] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[03/Sep/2017 12:18:55] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[03/Sep/2017 12:18:55] "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+[03/Sep/2017 12:18:58] "GET /admin/main/part/ HTTP/1.1" 200 4164
+[03/Sep/2017 12:18:58] "GET /admin/ HTTP/1.1" 200 3720
+[03/Sep/2017 12:19:02] "GET /admin/auth/user/ HTTP/1.1" 200 6449
+[03/Sep/2017 12:19:02] "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+[03/Sep/2017 12:19:02] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+[03/Sep/2017 12:19:02] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[03/Sep/2017 12:19:02] "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+[03/Sep/2017 12:19:05] "GET /admin/ HTTP/1.1" 200 3720
+[03/Sep/2017 12:19:07] "GET /admin/auth/group/ HTTP/1.1" 200 3379
+[03/Sep/2017 12:19:07] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[03/Sep/2017 12:19:13] "GET /admin/ HTTP/1.1" 200 3720
+[03/Sep/2017 12:19:15] "GET /admin/main/part/ HTTP/1.1" 200 4164
+[03/Sep/2017 12:19:15] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[03/Sep/2017 12:19:17] "GET /admin/ HTTP/1.1" 200 3720
+[03/Sep/2017 12:30:20] "GET / HTTP/1.1" 200 1716
+[03/Sep/2017 12:30:24] "GET / HTTP/1.1" 200 1716
+[03/Sep/2017 12:30:25] "GET / HTTP/1.1" 200 1716
+[03/Sep/2017 12:30:25] "GET / HTTP/1.1" 200 1716
+[03/Sep/2017 12:30:26] "GET / HTTP/1.1" 200 1716
+Not Found: /admi
+[03/Sep/2017 12:30:31] "GET /admi HTTP/1.1" 404 1939
+[03/Sep/2017 12:30:34] "GET /admin HTTP/1.1" 301 0
+[03/Sep/2017 12:30:34] "GET /admin/ HTTP/1.1" 302 0
+[03/Sep/2017 12:30:34] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1650
+[03/Sep/2017 12:30:34] "GET /static/admin/css/login.css HTTP/1.1" 200 1203
+[03/Sep/2017 12:30:34] "GET /static/admin/css/base.css HTTP/1.1" 200 16066
+[03/Sep/2017 12:30:34] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[03/Sep/2017 12:30:34] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 81348
+[03/Sep/2017 12:30:34] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 80304
+[03/Sep/2017 12:30:34] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 82564
+[03/Sep/2017 12:30:43] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[03/Sep/2017 12:30:43] "GET /admin/ HTTP/1.1" 200 3720
+[03/Sep/2017 12:30:43] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 412
+[03/Sep/2017 12:30:43] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[03/Sep/2017 12:30:43] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 03, 2017 - 12:30:11
+Django version 1.11.4, using settings 'conf.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 03, 2017 - 12:34:53
+Django version 1.11.4, using settings 'conf.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[03/Sep/2017 12:35:20] "GET /admin/ HTTP/1.1" 200 4500
+[03/Sep/2017 12:35:20] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[03/Sep/2017 12:35:20] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[03/Sep/2017 12:35:20] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[03/Sep/2017 12:35:20] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[03/Sep/2017 12:35:20] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[03/Sep/2017 12:35:20] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+Internal Server Error: /admin/main/model/
+Traceback (most recent call last):
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: restsv_models
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1542, in changelist_view
+    self.list_max_show_all, self.list_editable, self,
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/contrib/admin/views/main.py", line 79, in __init__
+    self.get_results(request)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/contrib/admin/views/main.py", line 177, in get_results
+    result_count = paginator.count
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/core/paginator.py", line 79, in count
+    return self.object_list.count()
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/db/models/query.py", line 364, in count
+    return self.query.get_count(using=self.db)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/db/models/sql/query.py", line 499, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/db/models/sql/query.py", line 480, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 894, in execute_sql
+    raise original_exception
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 884, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/db/backends/utils.py", line 80, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: restsv_models
+[03/Sep/2017 12:35:24] "GET /admin/main/model/ HTTP/1.1" 500 176521
+[03/Sep/2017 12:35:25] "GET /admin/ HTTP/1.1" 200 4500
+[03/Sep/2017 12:35:27] "GET /admin/main/part/ HTTP/1.1" 200 4164
+[03/Sep/2017 12:35:27] "GET /static/admin/css/changelists.css HTTP/1.1" 200 6170
+[03/Sep/2017 12:35:27] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[03/Sep/2017 12:35:27] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 363
+[03/Sep/2017 12:35:27] "GET /static/admin/js/actions.js HTTP/1.1" 200 6501
+[03/Sep/2017 12:35:27] "GET /static/admin/js/core.js HTTP/1.1" 200 7976
+[03/Sep/2017 12:35:27] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6591
+[03/Sep/2017 12:35:27] "GET /static/admin/js/urlify.js HTTP/1.1" 200 8186
+[03/Sep/2017 12:35:28] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 258648
+[03/Sep/2017 12:35:28] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1538
+[03/Sep/2017 12:35:28] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 128820
+[03/Sep/2017 12:35:28] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[03/Sep/2017 12:35:29] "GET /admin/ HTTP/1.1" 200 4500
+Internal Server Error: /admin/main/model/
+Traceback (most recent call last):
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: restsv_models
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1542, in changelist_view
+    self.list_max_show_all, self.list_editable, self,
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/contrib/admin/views/main.py", line 79, in __init__
+    self.get_results(request)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/contrib/admin/views/main.py", line 177, in get_results
+    result_count = paginator.count
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/core/paginator.py", line 79, in count
+    return self.object_list.count()
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/db/models/query.py", line 364, in count
+    return self.query.get_count(using=self.db)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/db/models/sql/query.py", line 499, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/db/models/sql/query.py", line 480, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 894, in execute_sql
+    raise original_exception
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 884, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/db/backends/utils.py", line 80, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: restsv_models
+[03/Sep/2017 12:35:31] "GET /admin/main/model/ HTTP/1.1" 500 176521
+[03/Sep/2017 12:35:32] "GET /admin/ HTTP/1.1" 200 4500
+Internal Server Error: /admin/main/brand/
+Traceback (most recent call last):
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: restsv_brands
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/contrib/admin/options.py", line 1542, in changelist_view
+    self.list_max_show_all, self.list_editable, self,
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/contrib/admin/views/main.py", line 79, in __init__
+    self.get_results(request)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/contrib/admin/views/main.py", line 177, in get_results
+    result_count = paginator.count
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/core/paginator.py", line 79, in count
+    return self.object_list.count()
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/db/models/query.py", line 364, in count
+    return self.query.get_count(using=self.db)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/db/models/sql/query.py", line 499, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/db/models/sql/query.py", line 480, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 894, in execute_sql
+    raise original_exception
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 884, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/db/backends/utils.py", line 80, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/shawn/.pyenv/versions/web362/lib/python3.6/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: restsv_brands
+[03/Sep/2017 12:35:33] "GET /admin/main/brand/ HTTP/1.1" 500 176522
+[03/Sep/2017 12:35:35] "GET /admin/ HTTP/1.1" 200 4500
+[03/Sep/2017 12:36:08] "GET /admin/main/brand/ HTTP/1.1" 200 3034
+[03/Sep/2017 12:36:08] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[03/Sep/2017 12:36:10] "GET /admin/main/brand/add/ HTTP/1.1" 200 3803
+[03/Sep/2017 12:36:10] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[03/Sep/2017 12:36:10] "GET /static/admin/css/forms.css HTTP/1.1" 200 8173
+[03/Sep/2017 12:36:10] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 495
+[03/Sep/2017 12:36:10] "GET /static/admin/js/change_form.js HTTP/1.1" 200 712
+[03/Sep/2017 12:36:10] "GET /static/admin/css/widgets.css HTTP/1.1" 200 10340
+[03/Sep/2017 12:36:12] "GET /admin/main/brand/ HTTP/1.1" 200 3034
+[03/Sep/2017 12:36:12] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[03/Sep/2017 12:36:13] "GET /admin/ HTTP/1.1" 200 4500
+[03/Sep/2017 12:36:16] "GET /admin/main/part/ HTTP/1.1" 200 4164
+[03/Sep/2017 12:36:16] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[03/Sep/2017 12:36:17] "GET /admin/ HTTP/1.1" 200 4500
+[03/Sep/2017 12:36:18] "GET /admin/main/model/ HTTP/1.1" 200 3034
+[03/Sep/2017 12:36:18] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[03/Sep/2017 12:36:19] "GET /admin/ HTTP/1.1" 200 4500
+[03/Sep/2017 12:36:20] "GET /admin/main/brand/ HTTP/1.1" 200 3034
+[03/Sep/2017 12:36:20] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[03/Sep/2017 12:36:21] "GET /admin/ HTTP/1.1" 200 4500
+[03/Sep/2017 12:36:43] "GET /admin/auth/user/ HTTP/1.1" 200 6449
+[03/Sep/2017 12:36:43] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[03/Sep/2017 12:36:43] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[03/Sep/2017 12:36:43] "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+[03/Sep/2017 12:36:43] "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+[03/Sep/2017 12:36:46] "GET /admin/ HTTP/1.1" 200 4500
+[03/Sep/2017 12:36:54] "GET /admin/auth/ HTTP/1.1" 200 2705
+[03/Sep/2017 12:36:55] "GET /admin/ HTTP/1.1" 200 4500
+[03/Sep/2017 12:40:17] "GET /admin/ HTTP/1.1" 200 4500
+[03/Sep/2017 12:40:17] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[03/Sep/2017 12:40:17] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[03/Sep/2017 12:40:17] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[03/Sep/2017 12:40:17] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[03/Sep/2017 12:40:17] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[03/Sep/2017 12:40:17] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[03/Sep/2017 12:40:17] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[03/Sep/2017 12:40:17] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[03/Sep/2017 12:40:21] "GET /admin/ HTTP/1.1" 200 4500
+[03/Sep/2017 12:40:21] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[03/Sep/2017 12:40:21] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[03/Sep/2017 12:40:21] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[03/Sep/2017 12:40:21] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[03/Sep/2017 12:40:21] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[03/Sep/2017 12:40:21] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[03/Sep/2017 12:40:21] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[03/Sep/2017 12:40:21] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[03/Sep/2017 12:40:40] "GET /admin/auth/group/ HTTP/1.1" 200 3379
+[03/Sep/2017 12:40:40] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[03/Sep/2017 12:40:43] "GET /admin/auth/group/add/ HTTP/1.1" 200 6543
+[03/Sep/2017 12:40:43] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[03/Sep/2017 12:40:43] "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 12389
+[03/Sep/2017 12:40:43] "GET /static/admin/js/SelectBox.js HTTP/1.1" 200 5755
+[03/Sep/2017 12:40:43] "GET /static/admin/img/icon-unknown-alt.svg HTTP/1.1" 200 655
+[03/Sep/2017 12:40:43] "GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 3291
+[03/Sep/2017 12:40:43] "GET /static/admin/img/icon-unknown.svg HTTP/1.1" 200 655
+[03/Sep/2017 12:41:01] "GET /admin/auth/group/ HTTP/1.1" 200 3379
+[03/Sep/2017 12:41:01] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[03/Sep/2017 12:41:02] "GET /admin/auth/ HTTP/1.1" 200 2705
+[03/Sep/2017 12:41:03] "GET /admin/auth/user/ HTTP/1.1" 200 6449
+[03/Sep/2017 12:41:03] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[03/Sep/2017 12:41:12] "GET /admin/auth/ HTTP/1.1" 200 2705
+[03/Sep/2017 12:41:13] "GET /admin/ HTTP/1.1" 200 4500
+[03/Sep/2017 12:44:15] "GET /admin/main/part/ HTTP/1.1" 200 4164
+[03/Sep/2017 12:44:15] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[03/Sep/2017 12:44:29] "POST /admin/main/part/ HTTP/1.1" 302 0
+[03/Sep/2017 12:44:29] "GET /admin/main/part/ HTTP/1.1" 200 4343
+[03/Sep/2017 12:44:30] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[03/Sep/2017 12:44:30] "GET /static/admin/img/icon-alert.svg HTTP/1.1" 200 504
+[03/Sep/2017 12:44:33] "GET /admin/main/part/1/change/ HTTP/1.1" 200 4033
+[03/Sep/2017 12:44:33] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[03/Sep/2017 12:44:35] "GET /admin/main/part/ HTTP/1.1" 200 4164
+[03/Sep/2017 12:44:35] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[03/Sep/2017 12:44:37] "GET /admin/main/ HTTP/1.1" 200 2962
+[03/Sep/2017 12:44:37] "GET /admin/ HTTP/1.1" 200 4500

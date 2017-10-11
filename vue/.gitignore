@@ -14,4 +14,4 @@ dist
 package-lock.json
 
 # assets/xx
-#assets/bootstrap-sass
+assets/bootstrap-sass

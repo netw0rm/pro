@@ -4,6 +4,8 @@
   </div>
 </template>
 
+<style lang="sass" src="~/assets/bootstrap-sass/assets/stylesheets/_bootstrap.scss"></style>
+
 <style>
 html {
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;

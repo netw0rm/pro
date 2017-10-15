@@ -13,6 +13,7 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "bower": "^1.8.2",
     "element-ui": "^1.4.6",
     "nuxt": "^1.0.0-rc8",
     "vue-awesome": "^2.3.3",

@@ -1,3 +1,11 @@
 # vendor
 vendor
+# *.tmp
+*.tmp
+# glide.lock
+glide.lock
 
+gosv
+routers/*
+!routers/router.go
+swagger
